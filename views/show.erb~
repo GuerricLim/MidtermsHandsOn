@@ -1,0 +1,7 @@
+<html>
+<body>
+	<h1><%= @expenses[:id] %></h1>
+	<h1><%= @expenses[:item] %></h1>
+	<h1><%= @expenses[:amount] %></h1>
+</body>
+</html>

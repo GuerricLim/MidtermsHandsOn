@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<form method ="POST", action='/save'>
+		<label for ="item">Item:</label>
+		<input type ="text" name="item"/><br>
+		<label for="amount">Amount:</label>
+		<input type= "number" name="amount"/><br>
+		<input type="Submit" action="Save"/>
+    if <%= @expenses.empty?%>
+	 	expense = Expense.new(1, #{@item}, #{@amount})
+	   expenses << expense
+	else
+		last_expense = expenses.last
+		next_id = last_expense.id
+		expense = Expense.new(next_id+1, #{@item}, #{@amount}
+	</form> 
+</body>
+</html>
+
